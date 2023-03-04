@@ -1,2 +1,1 @@
-# hardhat-tpg
-Deploying smart contract on filecoin EVM using hardhat
+## Smart Contract Deployment via HardHat
