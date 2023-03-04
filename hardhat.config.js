@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config(); 
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
     hyperspace: {
       chainId: 3141,
       url: "https://api.hyperspace.node.glif.io/rpc/v1",
-      accounts: ["f3071aea61ae32e805e774cdaa507f88dc29cc04bf6842815fc82d38d1cbfae1"],
+      accounts: [process.env.TEST_KEY],
       timeout: 100_000
   },
   }
